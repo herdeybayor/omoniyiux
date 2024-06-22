@@ -1,8 +1,35 @@
 ---
+import qs from "qs";
+
 import AvailableForWork from "./available-for-work.astro";
 import Avatar from "./avatar.astro";
 
-const { name, title, image } = Astro.props;
+import fetchApi from "../lib/strapi";
+
+import type Author from "../interfaces/author";
+
+const query = qs.stringify({
+    populate: {
+        profile_picture: {
+            fields: ["name", "width", "height", "url"],
+        },
+    },
+});
+
+const author = await fetchApi<Author>({
+    endpoint: `author?${query}`,
+    wrappedByKey: "data",
+});
+
+const {
+    name: author_name,
+    title: author_title,
+    profile_picture: {
+        data: {
+            attributes: { url: author_image },
+        },
+    },
+} = author.attributes;
 
 const pathname = new URL(Astro.request.url).pathname;
 
@@ -28,7 +55,7 @@ const links = [
 
 <div class="container mx-auto px-5 md:px-10 lg:px-20 py-5">
     <nav class="flex items-center justify-between">
-        <Avatar name={name} title={title} image={image} />
+        <Avatar name={author_name} title={author_title} image={author_image} />
         <ul class="flex items-center gap-7">
             {
                 links.map((link) => (

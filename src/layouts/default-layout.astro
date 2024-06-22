@@ -2,10 +2,7 @@
 import Header from "../components/header.astro";
 import "../styles/global.css";
 
-const {
-    pageTitle = "",
-    headerProps: { name, title, image },
-} = Astro.props;
+const { pageTitle = "" } = Astro.props;
 ---
 
 <html lang="en">
@@ -17,7 +14,7 @@ const {
         <title>{pageTitle} Omoniyiux</title>
     </head>
     <body>
-        <Header name={name} title={title} image={image} />
+        <Header />
 
         <main class="mt-20 container mx-auto px-5 md:px-10 lg:px-20">
             <slot />

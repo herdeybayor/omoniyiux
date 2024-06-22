@@ -8,9 +8,6 @@ import type Author from "../interfaces/author";
 
 const query = qs.stringify({
     populate: {
-        profile_picture: {
-            fields: ["name", "width", "height", "url"],
-        },
         social_links: {
             fields: ["platform", "url"],
         },
@@ -21,19 +18,9 @@ const author = await fetchApi<Author>({
     endpoint: `author?${query}`,
     wrappedByKey: "data",
 });
-
-const {
-    name: author_name,
-    title: author_title,
-    profile_picture: {
-        data: {
-            attributes: { url: author_image },
-        },
-    },
-} = author.attributes;
 ---
 
-<DefaultLayout pageTitle="Home 😎" headerProps={{ name: author_name, title: author_title, image: author_image }}>
+<DefaultLayout pageTitle="Home">
     <h1 class="font-black text-3xl md:text-5xl lg:text-7xl text-center uppercase !leading-normal">{author.attributes.greeting} <br /><span class="text-primary">A {author.attributes.title}</span></h1>
 
     <p class="text-gray-500 text-center mt-3 md:text-lg lg:text-xl">
