@@ -1,0 +1,43 @@
+---
+import AvailableForWork from "./available-for-work.astro";
+import Avatar from "./avatar.astro";
+
+const pathname = new URL(Astro.request.url).pathname;
+
+const links = [
+    {
+        href: "/",
+        text: "Home",
+    },
+    {
+        href: "/work",
+        text: "Work",
+    },
+    {
+        href: "/about",
+        text: "About",
+    },
+    {
+        href: "/contact",
+        text: "Contact",
+    },
+];
+---
+
+<div class="container mx-auto px-5 md:px-10 lg:px-20 py-5">
+    <nav class="flex items-center justify-between">
+        <Avatar />
+        <ul class="flex items-center gap-7">
+            {
+                links.map((link) => (
+                    <li>
+                        <a href={link.href} class={`${pathname === link.href ? "text-primary" : "text-gray-500"}`}>
+                            {link.text}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+        <AvailableForWork />
+    </nav>
+</div>
