@@ -2,7 +2,10 @@
 import Header from "../components/header.astro";
 import "../styles/global.css";
 
-const { title = "" } = Astro.props;
+const {
+    pageTitle = "",
+    headerProps: { name, title, image },
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -11,10 +14,10 @@ const { title = "" } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>{title} Omoniyiux</title>
+        <title>{pageTitle} Omoniyiux</title>
     </head>
     <body>
-        <Header />
+        <Header name={name} title={title} image={image} />
 
         <main class="mt-20 container mx-auto px-5 md:px-10 lg:px-20">
             <slot />

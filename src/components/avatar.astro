@@ -1,11 +1,13 @@
 ---
 import { Image } from "astro:assets";
+
+const { name = "John Doe", title = "Blacksmith", image = "https://placehold.co/48" } = Astro.props;
 ---
 
 <div class="flex items-center gap-3">
-    <Image src="/images/avatar.png" alt="Astro Logo" width={48} height={48} />
+    <Image src={image} alt="Astro Logo" width={48} height={48} class="rounded-full" />
     <div>
-        <h5 class="font-extrabold text-sm">Promise Olaifa</h5>
-        <p class="text-xs text-primary">Product Designer</p>
+        <h5 class="font-extrabold text-sm">{name}</h5>
+        <p class="text-xs text-primary">{title}</p>
     </div>
 </div>

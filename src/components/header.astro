@@ -2,6 +2,8 @@
 import AvailableForWork from "./available-for-work.astro";
 import Avatar from "./avatar.astro";
 
+const { name, title, image } = Astro.props;
+
 const pathname = new URL(Astro.request.url).pathname;
 
 const links = [
@@ -26,7 +28,7 @@ const links = [
 
 <div class="container mx-auto px-5 md:px-10 lg:px-20 py-5">
     <nav class="flex items-center justify-between">
-        <Avatar />
+        <Avatar name={name} title={title} image={image} />
         <ul class="flex items-center gap-7">
             {
                 links.map((link) => (
