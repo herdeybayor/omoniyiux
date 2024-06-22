@@ -66,8 +66,6 @@
     }
 
     body {
-        font-family: "Avenir", sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
+        @apply font-avenir;
     }
 }
