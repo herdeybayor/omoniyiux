@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/fonts/Avenir-Light.otf") format("otf");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/fonts/Avenir-Book.otf") format("otf");
+    font-weight: 350;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/fonts/Avenir-Roman.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/fonts/Avenir-Medium.otf") format("otf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/fonts/Avenir-Heavy.otf") format("otf");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("/fonts/Avenir-Black.otf") format("otf");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer base {
+    :root {
+        --primary-50: #fef5ee;
+        --primary-100: #fde7d7;
+        --primary-200: #facbae;
+        --primary-300: #f6a77b;
+        --primary-400: #f17946;
+        --primary-500: #ed5723;
+        --primary-600: #de3e18;
+        --primary-700: #b82c16;
+        --primary-800: #932519;
+        --primary-900: #762218;
+        --primary-950: #400e0a;
+    }
+
+    body {
+        font-family: "Avenir", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
