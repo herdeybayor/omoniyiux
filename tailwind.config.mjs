@@ -4,6 +4,13 @@ import defaultTheme from "tailwindcss/defaultTheme";
 export default {
     content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
     theme: {
+        container: {
+            center: true,
+            padding: "2rem",
+            screens: {
+                "2xl": "1400px",
+            },
+        },
         extend: {
             fontFamily: {
                 avenir: ["Avenir", ...defaultTheme.fontFamily.sans],
@@ -21,7 +28,7 @@ export default {
                     800: "var(--primary-800)",
                     900: "var(--primary-900)",
                     950: "var(--primary-950)",
-                    DEFAULT: "var(--primary-500)",
+                    DEFAULT: "var(--primary)",
                 },
             },
         },

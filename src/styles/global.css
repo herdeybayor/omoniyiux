@@ -52,6 +52,7 @@
 
 @layer base {
     :root {
+        --primary: #ed5723;
         --primary-50: #fef5ee;
         --primary-100: #fde7d7;
         --primary-200: #facbae;
