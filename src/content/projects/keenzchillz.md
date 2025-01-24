@@ -3,6 +3,7 @@ title: "KeenzChillz"
 href: "https://keenzchillz.com"
 dates: "2024 - Present"
 active: true
+type: "Website"
 description: "KeenzChillz is a family-oriented property management business offering serviced accommodations across the UK. The platform provides comfortable, convenient, and memorable stays for both business and leisure travelers, with a focus on creating a home away from home experience."
 technologies:
     - Next.js
@@ -12,9 +13,12 @@ technologies:
     - PostgreSQL
     - Stripe
 links:
-    - type: "Website"
-      href: "https://keenzchillz.com"
-      icon: "globe"
+    - type: "Figma"
+      href: "https://www.figma.com/community/file/1284408904729448578"
+      icon: "figma"
+    - type: "Dribbble"
+      href: "https://dribbble.com/keenzchillz"
+      icon: "dribbble"
 image: "/images/projects/keenzchillz.jpeg"
 featured: true
 draft: false

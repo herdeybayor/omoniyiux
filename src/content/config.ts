@@ -37,6 +37,7 @@ const projectSchema = z.object({
         })
     ),
     image: z.string(),
+    type: z.string(),
     featured: z.boolean().optional(),
     draft: z.boolean().optional(),
 });

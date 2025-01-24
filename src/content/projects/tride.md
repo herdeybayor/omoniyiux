@@ -3,6 +3,7 @@ title: "Tride"
 href: "https://tridehq.com"
 dates: "Jan 2024 - Present"
 active: true
+type: "Website"
 description: "Africa's No 1 Online Bank for Churches and Ministries. Tride helps religious organizations receive funds faster from members and donors with dedicated bank accounts and online payment options."
 technologies:
     - Next.js

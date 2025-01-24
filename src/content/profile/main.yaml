@@ -1,5 +1,5 @@
-name: "Sherifdeen Adebayo"
-initials: "SA"
+name: "Omoniyi"
+initials: "O"
 url: "https://sherifdeen.dev"
 resumeUrl: "https://dub.sh/herdeybayor-resume"
 location:
@@ -9,32 +9,30 @@ location:
         flag: "🇳🇬"
     city: "Lagos"
     link: "https://www.google.com/maps/place/lagos"
-description: "Creative Full-stack Developer with a proven track record of building impactful web and mobile solutions that drive growth. Spearheaded the creation of a fully customized online accommodations booking platform using Reactjs, Nextjs, Tailwindcss, Typescript, and Nodejs, resulting in a 25% faster booking process and secure payment gateway."
-summary: "Creative Full-stack Developer with expertise in building performant front-end interfaces, optimizing back-end code, and developing engaging mobile experiences. I thrive in collaborative environments and am always passionate about using technology to solve real-world problems."
+description: "I am a Product Designer, with a strong enthusiasm for turning ideas into simple, intuitive, and interactive designs that effectively communicate a message and provide a positive user experience. My specialty is Product design which includes User Research (UXR), User Experience design (drafting persona, empathy map, affinity diagram, pain point & Information Architecture) Wireframe, Rapid Prototype, and Checking Usability & Accessibility of Mobile & web apps."
+summary: "I am keenly interested and passionate about learning and sharing my knowledge in Product Design, focusing on creating user-centered solutions through comprehensive research, thoughtful design processes, and iterative improvements."
 avatarUrl: "/images/profile/avatar.png"
 skills:
-    - JavaScript
-    - TypeScript
-    - React.js
-    - Next.js
-    - Remix
-    - Angular
-    - Node.js
-    - Python
-    - Django
-    - Docker
-    - C#
-    - PHP
-    - Laravel
-    - NestJS
-    - React Native
-    - C++
+    - UI/UX Design
+    - User Research
+    - Wireframing
+    - Prototyping
     - Figma
-    - iOS Development
-    - Android Development
-    - AI Engineering
-    - Java
-    - AWS
+    - Adobe XD
+    - Information Architecture
+    - User Journey Mapping
+    - Usability Testing
+    - Design Systems
+    - Interaction Design
+    - Visual Design
+    - Design Thinking
+    - User Personas
+    - Accessibility Design
+    - Mobile Design
+    - Web Design
+    - Adobe Creative Suite
+    - Sketch
+    - Design Documentation
 navbar:
     - href: "/"
       label: "Home"
@@ -43,31 +41,31 @@ navbar:
       label: "Blog"
       icon: "NotebookIcon"
 contact:
-    email: "herdeybayor4real@gmail.com"
-    tel: "+2348187545963"
+    email: "olaifapromise1@gmail.com"
+    tel: "+2349130125904"
     social:
-        GitHub:
-            name: "GitHub"
-            url: "https://dub.sh/herdeybayor-github"
-            icon: "github"
+        Dribbble:
+            name: "Dribbble"
+            url: "https://dribbble.com/omoniyiux"
+            icon: "dribbble"
             navbar: true
         LinkedIn:
             name: "LinkedIn"
-            url: "https://www.linkedin.com/in/herdeybayor/"
+            url: "https://www.linkedin.com/in/omoniyiux/"
             icon: "linkedin"
             navbar: true
         X:
             name: "X"
-            url: "https://dub.sh/herdeybayor-twitter"
+            url: "https://x.com/omoniyiux"
             icon: "x"
             navbar: true
         Youtube:
             name: "Youtube"
-            url: "https://dub.sh/herdeybayor-youtube"
+            url: "https://www.youtube.com/@omoniyiux"
             icon: "youtube"
             navbar: true
         email:
             name: "Send Email"
-            url: "mailto:herdeybayor4real@gmail.com"
+            url: "mailto:olaifapromise1@gmail.com"
             icon: "email"
             navbar: false

@@ -6,6 +6,47 @@ export const Icons = {
     globe: (props: IconProps) => <GlobeIcon {...props} />,
     email: (props: IconProps) => <MailIcon {...props} />,
     copy: (props: IconProps) => <CopyIcon {...props} />,
+    dribbble: (props: IconProps) => (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-dribbble"
+            {...props}
+        >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94" />
+            <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32" />
+            <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72" />
+        </svg>
+    ),
+    figma: (props: IconProps) => (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-figma"
+            {...props}
+        >
+            <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+            <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+            <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+            <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+            <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+        </svg>
+    ),
     linkedin: (props: IconProps) => (
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
             <title>LinkedIn</title>
